@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-fluid {
+    font-size: clamp(0.3rem, 0.5vw + 0.5rem, 1.7rem);
+  }
+  .cont{
+  width: min(300px + 20% , 10000px);
+  height: min(300px + 20% ,5000px);
+  }
+  .card{
+  height: min(100px + 20%)
+  }
+}
+html, body{
+@apply overscroll-none overflow-hidden
+}
+.active {
+  @apply bg-slate-700 rounded-md text-white;
+}
+th,td{
+@apply border text-center 
+}
